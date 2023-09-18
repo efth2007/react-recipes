@@ -17,7 +17,7 @@ function Popular() {
 
   const getPopular = async()=>{
   //  try {
-    const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`);
+    const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&tags=vegetarian`);
 
     // if (!api.ok) {
     //   throw new Error('Network response was not ok');
@@ -83,7 +83,7 @@ img {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 100%
+  height: 100%;
   object-fit: cover;
 }
 
@@ -113,5 +113,6 @@ width: 100%;
 height: 100%;
 background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
 `
+
 
 export default Popular
