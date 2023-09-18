@@ -12,7 +12,7 @@ export default function Home() {
        exit={{ opacity: 0 }}
        transition={{ duration: 0.5 }}
      >
-        <Popular/>
+        {/* <Popular/> */}
         <Veggie/>
 
     </motion.div>

@@ -41,7 +41,8 @@ function Popular() {
   //   return <div>Error: {error.message}</div>;
   // }
 
-  return (<div>
+  return (
+  <div>
     <Wrapper>
       <h3>Popular picks...</h3>
       <Splide options={{
